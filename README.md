@@ -17,7 +17,7 @@ Design files for Quad Linear Amplifier (QLA) board
 * Rev 1.2: Build #1 (44 boards)
  * Deleted trace from Q15A (MOSFET) to U39B (OPA549) to avoid glitches at power-up (on all 4 channels)
  * Added J11 to enable connection to remote LED panel
-* Rev 1.3 (PCB silkscreen is Rev 1.2): Build #2 (68 boards), Build #3 (72 boards)
+* Rev 1.3 (PCB silkscreen is Rev 1.2): Build #2 (68 boards), Build #3 (72 boards), Build #4 (80 boards)
  * Changed relay (U31) from +12V to +5V to avoid rework needed to bring external +12V to board
  * Fixed silkscreen for Pot2 and Pot3 test points (they were swapped)
  * Changed R52 to 0 Ohms (Rev 1.1 and 1.2 boards were reworked accordingly)
