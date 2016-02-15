@@ -23,4 +23,9 @@ Design files for Quad Linear Amplifier (QLA) board
  * Changed R52 to 0 Ohms (Rev 1.1 and 1.2 boards were reworked accordingly)
  * Added screwlocks (Female, 4-40, 0.185") to DB9 connector
  * Design files indicate Rev 1.3, but manufactured boards show Rev 1.2; boards can be distinguished by looking at relay (U31)
- 
+* Rev 1.4: Build #5
+ * Changed digital outputs from open-drain MOSFETs to bi-directional bus transceivers (74LVC2T45) with 5V output; direction controlled by FPGA IO1-5 and IO1-6. Proper operation requires FPGA Firmware Rev 5+
+ * Added feedback of motor voltage fault (from LT4356) on FPGA IO1-7
+ * Grounded heatsink on PCB
+ * Added plated slots for soldering 68-pin connector tabs
+ * Moved Q13, Q14 and updated PCB pads to facilitate assembly
