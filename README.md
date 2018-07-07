@@ -30,7 +30,7 @@ Design files for Quad Linear Amplifier (QLA) board
   * Added plated slots for soldering 68-pin connector tabs
   * Moved Q13, Q14 and updated PCB pads to facilitate assembly
 * Rev 1.4a: Build #6 (75 boards)
-  * Increased maximum motor supply voltage from ~50.2V to ~52.7V
+  * Increased acceptable range of motor supply voltage from 11.2V-50.2V to 10.5V-52.7V (values are approximate)
     * Changed R33, R34 to raise LT4356 maximum voltage from ~51.25V to ~52.7V
-    * Changed R27, R28 to set MV_GOOD window comparator thresholds to 11.0V and 55.2V (which should never be reached due to 52.7V limit on LT4356)
+    * Changed R27, R28 to set MV_GOOD window comparator thresholds to 10.5V and 52.8V
   * Added transorb SMAJ64CA on back side of connector J5, between pins 2 and 3, to limit flyback voltages on motor power supply (especially with 48V supply)
