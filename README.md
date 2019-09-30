@@ -34,3 +34,7 @@ Design files for Quad Linear Amplifier (QLA) board
     * Changed R33, R34 to raise LT4356 maximum voltage from ~51.25V to ~52.7V
     * Changed R27, R28 to set MV_GOOD window comparator thresholds to 10.5V and 52.8V
   * Added transorb SMAJ64CA on back side of connector J5, between pins 2 and 3, to limit flyback voltages on motor power supply (especially with 48V supply)
+* Rev 1.4b: Build #7 (120 boards)
+  * Changed pot filter cutoff frequency from 60 Hz to 5 kHz
+    * Changed R1-8 from 39.2K to 464 Ohm
+  * Fixed description of Q9-11,15 (30V instead of 20V)
