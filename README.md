@@ -37,4 +37,5 @@ Design files for Quad Linear Amplifier (QLA) board
 * Rev 1.4b: Build #7 (120 boards)
   * Changed pot filter cutoff frequency from 60 Hz to 5 kHz
     * Changed R1-8 from 39.2K to 464 Ohm
+    * Allows faster reading of multiplexed signals (SUJ pots)
   * Fixed description of Q9-11,15 (30V instead of 20V)
