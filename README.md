@@ -41,7 +41,7 @@ Design files for Quad Linear Amplifier (QLA) board
   * Fixed description of Q9-11,15 (30V instead of 20V)
 * Rev 1.5: Build #9 (2 prototypes)
   * Added (open loop) motor voltage control as a software-selectable alternative to the existing (analog closed loop) motor current control
-  * Added 10 digital I/O via an I/O expander (Max7317):
+  * Added 10 digital I/O via an I/O expander (U41, Max7317):
     * 4 digital outputs to select between motor voltage control (0) or motor current control (1) for each axis
     * 4 digital outputs to enable the follower OPA549 op amps that previously were always enabled
     * 1 digital input that indicates whether voltage is present on safety line
@@ -51,3 +51,7 @@ Design files for Quad Linear Amplifier (QLA) board
   * Changes due to component availability issues:
     * Support use of 1 LTC2604 quad DAC instead of 4 LTC2601 single DACs; populate pulldown resistor R75 to indicate use of LTC2604
     * Support AD7694 as an alternative to LTC1864 ADC; this required the addition of voltage level translators (U44, U45)
+    * Changed part number for 2.5V linear regulator (U32), which included a pinout change
+    * Changed footprint for safety relay (U31)
+    * Changed footprint for D7 (Schottky diode)
+    * Several other part number changes that did not change pinout or package type
