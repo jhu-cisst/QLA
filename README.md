@@ -34,8 +34,20 @@ Design files for Quad Linear Amplifier (QLA) board
     * Changed R33, R34 to raise LT4356 maximum voltage from ~51.25V to ~52.7V
     * Changed R27, R28 to set MV_GOOD window comparator thresholds to 10.5V and 52.8V
   * Added transorb SMAJ64CA on back side of connector J5, between pins 2 and 3, to limit flyback voltages on motor power supply (especially with 48V supply)
-* Rev 1.4b: Build #7 (120 boards)
+* Rev 1.4b: Build #7 (120 boards), Build #8 (80 boards)
   * Changed pot filter cutoff frequency from 60 Hz to 5 kHz
     * Changed R1-8 from 39.2K to 464 Ohm
     * Allows faster reading of multiplexed signals (SUJ pots)
   * Fixed description of Q9-11,15 (30V instead of 20V)
+* Rev 1.5: Build #9 (2 prototypes)
+  * Added (open loop) motor voltage control as a software-selectable alternative to the existing (analog closed loop) motor current control
+  * Added 10 digital I/O via an I/O expander (Max7317):
+    * 4 digital outputs to select between motor voltage control (0) or motor current control (1) for each axis
+    * 4 digital outputs to enable the follower OPA549 op amps that previously were always enabled
+    * 1 digital input that indicates whether voltage is present on safety line
+    * 1 digital input that can be used to measure the motor supply voltage
+  * Increased analog filter cutoff frequency from 60 Hz to 42 kHz for motor current feedback to ADC
+  * Added pads for transorb (D12) on back side of board (previously, was either not present or was soldered between connector pins)
+  * Changes due to component availability issues:
+    * Support use of 1 LTC2604 quad DAC instead of 4 LTC2601 single DACs; populate pulldown resistor R75 to indicate use of LTC2604
+    * Support AD7694 as an alternative to LTC1864 ADC; this required the addition of voltage level translators (U44, U45)
