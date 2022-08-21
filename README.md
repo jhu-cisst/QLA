@@ -55,3 +55,5 @@ Design files for Quad Linear Amplifier (QLA) board
     * Changed footprint for safety relay (U31)
     * Changed footprint for D7 (Schottky diode)
     * Several other part number changes that did not change pinout or package type
+* Rev 1.6: Build #9
+  * Added tristate buffer (U46) to Max7317 output
